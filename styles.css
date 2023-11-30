@@ -268,11 +268,12 @@ h1 {
 }
 
 /* Styles for the popup gallery */
+
 #bts-popup {
   display: none;
   position: fixed;
   top: 50%;
-  left: 50%;
+  left: 37%;
   transform: translate(-50%, -50%);
   width: 70%;
   max-width: 800px;
@@ -285,18 +286,21 @@ h1 {
   font-size: 18px;
 }
 
-#bts-popup img {
+#bts-popup img, video  {
   max-width: 100%;
   height: auto;
   border: 2px solid #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
   margin-bottom: 10px;
+  max-height: 400px;
+  background-color: #000;
 }
 
 #close-btn {
   position: absolute;
   margin-right: 5%;
+  margin-top: -10%;
   cursor: pointer;
   color: #ffffff;
   font-size: 60px;
