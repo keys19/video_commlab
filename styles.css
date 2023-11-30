@@ -163,16 +163,17 @@ body {
 #image-overlay {
   position: absolute;
   bottom: 10px; /* Adjust the distance from the bottom */
-  right: -10%; /* Adjust the distance from the right */
+  right: -13%; /* Adjust the distance from the right */
   z-index: 1; /* Place the image above the iframe */
   width: 175px; /* Adjust the width of the image */
   height: auto; /* Maintain the aspect ratio */
 }
 
 #image-overlay-top-left {
+  margin-top: 10px;
   position: absolute;
-  top: 10px; /* Adjust the distance from the top */
-  left: 10px; /* Adjust the distance from the left */
+  top: -125px; /* Adjust the distance from the top */
+  left: -15%; /* Adjust the distance from the left */
   z-index: 1;
   width: 175px;
   height: auto;
