@@ -113,6 +113,16 @@ body {
   height: 100%;
 }
 
+#image-overlay {
+  position: absolute;
+  bottom: 10px; /* Adjust the distance from the bottom */
+  right: -10%; /* Adjust the distance from the right */
+  z-index: 1; /* Place the image above the iframe */
+  width: 175px; /* Adjust the width of the image */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+
 #menu-container {
   position: absolute;
   top: 0;
