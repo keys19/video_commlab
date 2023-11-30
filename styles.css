@@ -24,15 +24,16 @@ body {
   display: flex;
   flex-direction: column;
   margin: 205px;
-  justify-content: left;
-  margin-top: 365px;
+  /* justify-content: left; */
+  margin-top: 300px;
   align-items: flex-end;
 }
 
 .header h1 {
-  font-size: 120px;
+  font-size: 70px;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Bevan', serif;
   text-align: left;
 }
 
@@ -91,16 +92,16 @@ body {
 
 /* Styles for the film description popup - i button */
 #film-description-btn {
-  width: 60px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
   background-color: #3498db00;
   color: #fff;
   border: none;
   cursor: pointer;
-  /* margin-top: 5px; */
+  margin-right: 43%;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   border-radius: 50%; /* Make it rounded */
-  /* position: relative; */
+
 }
 
 #film-description-btn:hover {
@@ -120,7 +121,8 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
   z-index: 1001;
   color: #ffffff;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Bevan', serif; */
   font-size: 30px;
   line-height: 1.6;
 }
@@ -213,7 +215,8 @@ body {
 .h1 {
   font-size: 50px;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Bevan', serif;
   color: white;
   text-align: center;
   padding: 2%;
@@ -356,6 +359,15 @@ h1 {
   .team-section button {
     /* margin-left: 40%; */
     margin-right: auto;
+  }
+
+  #film-description-btn {
+    margin-right: 0; 
+    margin-left: auto; }
+
+  #film-description-popup {
+    width: 90%; 
+    max-width: none; 
   }
 }
 
