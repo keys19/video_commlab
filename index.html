@@ -46,22 +46,12 @@
   <div class="film" id="section1">
     <h1>The Film</h1>
 
-    <div class="flex-container">
-      <!-- Left empty section -->
-      <div class="empty-section"></div>
-
-      <!-- Film section in the center -->
-      <div id="iframe-container">
-        <div id="player"></div>
-        <div id="menu-container" style="display: none;">
-          <div class="menu-option" onclick="redirectToPage('scene7b.html')">Runaway</div>
-          <div class="menu-option" onclick="redirectToPage('scene7a.html')">Approach Roommate</div>
-        </div>
-      </div>
-
-      <!-- Cookie image in the bottom right -->
-      <div class="cookie-section">
-        <img id="image-overlay" src="/images/cookie.png" alt="Overlay Image">
+    <!-- Film section in the center -->
+    <div id="iframe-container">
+      <div id="player"></div>
+      <div id="menu-container" style="display: none;">
+        <div class="menu-option" onclick="redirectToPage('scene7b.html')">Runaway</div>
+        <div class="menu-option" onclick="redirectToPage('scene7a.html')">Approach Roommate</div>
       </div>
     </div>
   </div>
@@ -99,8 +89,8 @@
     <div id="bts-popup">
       <span id="close-btn" onclick="closeBtsPopup()">&times;</span>
       <!-- Add your BTS images here -->
-      <img src="/images/1.png" alt="Behind the Scenes 1">
-      <img src="/images/2.png" alt="Behind the Scenes 2">
+      <img src="/images/bts1.png" alt="Behind the Scenes 1">
+      <!-- <img src="/images/2.png" alt="Behind the Scenes 2"> -->
       <!-- Add more images as needed -->
     </div>
   </div>
@@ -147,4 +137,5 @@
 </body>
 
 </html>
+
 
