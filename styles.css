@@ -218,9 +218,14 @@ h1 {
   border: none;
   cursor: pointer;
   margin-top: 20px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 50%; /* Make it rounded */
 }
 
+#film-description-btn:hover {
+  background-color: rgb(252, 235, 4); /* Change this color to your desired hover color */
+  box-shadow: 20px rgb(255, 116, 3);
+}
 #film-description-popup {
   display: none;
   position: fixed;
