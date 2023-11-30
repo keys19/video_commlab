@@ -1,169 +1,168 @@
 body {
-      margin: 0;
-      padding: 0;
-      /* display: flex; */
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      background-color: #f0f0f0;
-    }
-
-    .header {
-        background-image: url(./images/cookie_background.png);
-        background-size: cover;
-        color: #f7f3f3;
-        display: flex;
-        align-items: center;
-        padding: 20px;
-        height: 100vh;
-        background-repeat: no-repeat;
-    }
-    
-    .text-container {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        margin: 205px;
-        justify-content: left; /* This might need adjustment based on your layout needs */
-        margin-top: 365px;
-        align-items: flex-end;
-    }
-    
-    /* Where is my cookie title */
-    .header h1 {
-        font-size: 120px;
-        margin: 0;
-        font-family: 'Poppins', sans-serif;
-        text-align: left;
-    }
-    
-
-  /* navbar */
-  .navbar 
-  {
-      width: 100%;
-      overflow: auto;
-      justify-content: center;
-      position:absolute;
-      background-color: #241104; /* Brown color for the navbar */
-      border-radius: 80px; /* Rounded corners */
-      padding: 10px;
-      width: 40%;
-      margin-left: 30%;
-      margin-top: 3%;
-      text-align: center;
-      position: fixed;
-  }  
-
-  /* navbar links */
-  .navbar a {
-    display: inline-block; /* Change from float to inline-block */
-    text-align: center;
-    padding: 12px;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    font-size: 17px;
-    padding: 10px 20px;
-    margin: 0 10px;
-    font-weight: bold;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
 }
 
-  /* Navbar links on mouse-over */
-  .navbar a:hover {
-      background-color:  rgb(255, 213, 183);
-      color: #000;
-      border-radius: 80px;
-      
-  }
+.header {
+  background-image: url(./images/cookie_background.png);
+  background-size: cover;
+  color: #f7f3f3;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
 
-  .navbar ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0; 
-  }
-  .navbar li {
-      display: inline-block;
-      margin: 0;}
+.text-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 205px;
+  justify-content: left;
+  margin-top: 365px;
+  align-items: flex-end;
+}
 
-  .navbar li img{
-      height: 30px; 
-      width: 30px;
-      justify-content: flex-start;
-  }
+.header h1 {
+  font-size: 120px;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+}
 
+/* navbar */
+.navbar {
+  width: 100%;
+  overflow: auto;
+  justify-content: center;
+  position: absolute;
+  background-color: #241104;
+  border-radius: 80px;
+  padding: 10px;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 3%;
+  text-align: center;
+  position: fixed;
+}
+
+.navbar a {
+  display: inline-block;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: rgb(255, 213, 183);
+  color: #000;
+  border-radius: 80px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0;
+}
+
+.navbar li img {
+  height: 30px;
+  width: 30px;
+  justify-content: flex-start;
+}
 
 /* Section1 - FILM */
+
 #section1 {
   background-color: #000;
   background-position: center;
   height: 100vh;
   padding-top: 5%;
-  
-
 }
 
-#player {
-    width: 100%;
-    height: 670px; 
-}
-#iframe-container {
-    position: relative;
-    width: 60%;
-    height: 70%;
-    margin-left: 20%;
-  }
-
-  #video-iframe {
-    width: 100%;
-    height: 100%;
-  }
-
-  #menu-container {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-display: none;
-flex-direction: row; /* Horizontal layout */
-align-items: center;
-justify-content: center;
-background-color: rgba(0, 0, 0, 0.7);
-color: white;
-/* opacity: 0; /* Start with opacity: 0; */
-/* transition: opacity 0.5s ease; Add a transition for opacity  */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Adjust as needed */
 }
 
-
-
-.menu-option {
-padding: 100px 70px; 
-margin: 10px;
-cursor: pointer;
-font-size: 40px;
-background-color: #391b05; 
-color: white;
-display: flex;
-align-items: center;
-justify-content: center;
-transition: background-color 0.3s ease;
-box-sizing: border-box; 
+/* Adjust the empty section as needed */
+.empty-section {
+  flex:1;
+  margin-left: 7%;
 }
 
-.menu-option:hover {
-background-color: #A0522D; /* Darker brown on hover */
+.cookie-section {
+  align-self: flex-end; /* Adjust as needed */
+  margin-bottom: 10px; /* Adjust as needed */
+  margin-right: -40px; 
 }
 
 #image-overlay {
-    position: absolute;
-    bottom: 10px; /* Adjust the distance from the bottom */
-    right: -10%; /* Adjust the distance from the right */
-    z-index: 1; /* Place the image above the iframe */
-    width: 175px; /* Adjust the width of the image */
-    height: auto; /* Maintain the aspect ratio */
-  }
+  width: 40%;
+  height: 40%;
+}
+#player {
+  width: 100%;
+  height: 360px;
+}
 
+#iframe-container {
+  position: relative;
+  width: 60%;
+  height: 70vh;
+  margin-left: 20%;
+}
+
+#video-iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#menu-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.menu-option {
+  padding: 40px 60px; /* Adjust padding as needed */
+  margin: 10px;
+  cursor: pointer;
+  font-size: 50px;
+  background-color: rgb(39, 17, 1);
+  color: white;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.menu-option:hover {
+  background-color: #773a1e;
+}
 
 
 .h1 {
@@ -175,26 +174,22 @@ background-color: #A0522D; /* Darker brown on hover */
   padding: 2%;
 }
 
-
 /* section4 - CAST */
-
 .team-section {
   background-color: #000000;
   padding: 20px;
   height: 100vh;
   padding-top: 5%;
 }
-h1
-  {
 
-      font-size: 50px;
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      color: white;
-      text-align: center;
-      padding: 2%;
-    /* padding-top: 10%; */
-  }
+h1 {
+  font-size: 50px;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-align: center;
+  padding: 2%;
+}
 
 .team-container {
   display: flex;
@@ -203,9 +198,8 @@ h1
 
 .team-member {
   text-align: center;
-  width: 20%; /* Adjust the width as needed */
-   padding: 20px;
-  
+  width: 20%;
+  padding: 20px;
 }
 
 .team-member img {
@@ -227,105 +221,217 @@ h1
   font-family: 'Poppins', sans-serif;
 }
 
-
-
-
 /* Styles for the film description popup */
-/* for the "About the Film" button */
-/* Styles for the "About the Film" button */
 #film-description-btn {
-    width: 60px;
-    height: 60px;
-    background-color: #3498db00;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
+  width: 60px;
+  height: 60px;
+  background-color: #3498db00;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
 
-  }
-  
-  #film-description-popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70%;
-    max-width: 800px;
-    background-color: #331b10;
-    padding: 50px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-    z-index: 1001;
-    color: #ffffff;
-    font-family: 'Arial', sans-serif;
-    font-size: 30px;
-    line-height: 1.6;
-  }
-  
-  #close-film-description {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    color: #fffcfc;
-    font-size: 60px;
-  }
-  
+#film-description-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 800px;
+  background-color: #331b10;
+  padding: 50px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  z-index: 1001;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  font-size: 30px;
+  line-height: 1.6;
+}
+
+#close-film-description {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #fffcfc;
+  font-size: 60px;
+}
 
 /* Styles for the popup gallery */
-
-
-
 #bts-popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70%;
-    max-width: 800px;
-    background-color: #33333300;
-    padding: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-    z-index: 1000;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 800px;
+  background-color: #33333300;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
 }
 
 #bts-popup img {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
-    margin-bottom: 10px;
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  margin-bottom: 10px;
 }
 
 #close-btn {
-    position: absolute;
-    margin-right: 5%;
-    cursor: pointer;
-    color: #ffffff; /* Close button color */
-    font-size: 60px;
+  position: absolute;
+  margin-right: 5%;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 60px;
 }
 
 /* Style for the BTS gallery button */
 .team-section button {
-    background-color: #422012;
-    color: #fff;
-    padding: 10px 10px;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-   margin-left: 45%;
-   padding: 1%;
-   border-radius: 80px;
+  background-color: #422012;
+  color: #fff;
+  padding: 10px 10px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 40%;
+  width: 20%;
+  padding: 1%;
+  border-radius: 80px;
 }
+
 .team-section button:hover {
-    background-color:  rgb(255, 213, 183); /* Darker brown on hover */
-    color: #000;
+  background-color: rgb(255, 213, 183);
+  color: #000;
+}
+
+/* Media query for screens smaller than 768 pixels */
+@media (max-width: 768px) {
+  .text-container {
+    margin: 50px;
+    margin-top: 150px;
+    align-items: center;
   }
+
+  .header h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  /* Adjust other styles as needed for smaller screens */
+
+  .team-section {
+    height: auto;
+    padding: 10px;
+  }
+
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    width: 80%;
+  }
+
+  .team-section button {
+    /* margin-left: 40%; */
+    margin-right: auto;
+  }
+}
+
+/* Media query for screens smaller than 600 pixels */
+@media (max-width: 600px) {
+  .navbar {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .navbar a {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  #iframe-container {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  /* Adjust other styles as needed for smaller screens */
+
+  .team-section {
+    height: auto;
+    padding: 10px;
+  }
+
+  .team-member {
+    width: 100%;
+  }
+  .team-section button {
+    width: 20%;
+    
+  }
+}
+
+/* Media query for screens smaller than 480 pixels */
+@media (max-width: 480px) {
+  .navbar {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .navbar a {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  #iframe-container {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  /* Adjust other styles as needed for smaller screens */
+
+  .team-section {
+    height: auto;
+    padding: 10px;
+  }
+
+  .team-member {
+    width: 100%;
+  }
+}
+
+/* Media query for screens smaller than 360 pixels */
+@media (max-width: 360px) {
+  .text-container {
+    margin: 20px;
+    margin-top: 100px;
+  }
+
+  .header h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  /* Adjust other styles as needed for smaller screens */
+
+  .team-section {
+    height: auto;
+    padding: 10px;
+  }
+
+  .team-member {
+    width: 100%;
+  }
+}
