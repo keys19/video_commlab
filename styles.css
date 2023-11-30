@@ -96,28 +96,6 @@ body {
   padding-top: 5%;
 }
 
-.flex-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start; /* Adjust as needed */
-}
-
-/* Adjust the empty section as needed */
-.empty-section {
-  flex:1;
-  margin-left: 7%;
-}
-
-.cookie-section {
-  align-self: flex-end; /* Adjust as needed */
-  margin-bottom: 10px; /* Adjust as needed */
-  margin-right: -40px; 
-}
-
-#image-overlay {
-  width: 40%;
-  height: 40%;
-}
 #player {
   width: 100%;
   height: 360px;
@@ -149,7 +127,7 @@ body {
 }
 
 .menu-option {
-  padding: 40px 60px; /* Adjust padding as needed */
+  padding: 40px 50px; /* Adjust padding as needed */
   margin: 10px;
   cursor: pointer;
   font-size: 50px;
