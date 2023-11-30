@@ -30,7 +30,7 @@ body {
 }
 
 .header h1 {
-  font-size: 70px;
+  font-size: 78px;
   margin: 0;
   /* font-family: 'Poppins', sans-serif; */
   font-family: 'Bevan', serif;
@@ -92,8 +92,8 @@ body {
 
 /* Styles for the film description popup - i button */
 #film-description-btn {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   background-color: #3498db00;
   color: #fff;
   border: none;
@@ -215,8 +215,8 @@ body {
 .h1 {
   font-size: 50px;
   margin: 0;
-  /* font-family: 'Poppins', sans-serif; */
-  font-family: 'Bevan', serif;
+  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Bevan', serif; */
   color: white;
   text-align: center;
   padding: 2%;
