@@ -18,6 +18,7 @@ body {
   background-repeat: no-repeat;
 }
 
+/* header text */
 .text-container {
   flex: 1;
   display: flex;
@@ -87,6 +88,52 @@ body {
   justify-content: flex-start;
 }
 
+
+/* Styles for the film description popup - i button */
+#film-description-btn {
+  width: 60px;
+  height: 60px;
+  background-color: #3498db00;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  /* margin-top: 5px; */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 50%; /* Make it rounded */
+  /* position: relative; */
+}
+
+#film-description-btn:hover {
+  background-color: rgb(252, 235, 4); /* Change this color to your desired hover color */
+  box-shadow: 20px rgb(255, 116, 3);
+}
+#film-description-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 800px;
+  background-color: #331b10;
+  padding: 50px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  z-index: 1001;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  font-size: 30px;
+  line-height: 1.6;
+}
+
+#close-film-description {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #fffcfc;
+  font-size: 60px;
+}
+
 /* Section1 - FILM */
 
 #section1 {
@@ -120,6 +167,15 @@ body {
   z-index: 1; /* Place the image above the iframe */
   width: 175px; /* Adjust the width of the image */
   height: auto; /* Maintain the aspect ratio */
+}
+
+#image-overlay-top-left {
+  position: absolute;
+  top: 10px; /* Adjust the distance from the top */
+  left: 10px; /* Adjust the distance from the left */
+  z-index: 1;
+  width: 175px;
+  height: auto;
 }
 
 
@@ -161,6 +217,7 @@ body {
   text-align: center;
   padding: 2%;
 }
+
 
 /* section4 - CAST */
 .team-section {
@@ -207,50 +264,6 @@ h1 {
   color: #ffffff;
   font-size: 20px;
   font-family: 'Poppins', sans-serif;
-}
-
-/* Styles for the film description popup */
-#film-description-btn {
-  width: 60px;
-  height: 60px;
-  background-color: #3498db00;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 50%; /* Make it rounded */
-}
-
-#film-description-btn:hover {
-  background-color: rgb(252, 235, 4); /* Change this color to your desired hover color */
-  box-shadow: 20px rgb(255, 116, 3);
-}
-#film-description-popup {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70%;
-  max-width: 800px;
-  background-color: #331b10;
-  padding: 50px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-  z-index: 1001;
-  color: #ffffff;
-  font-family: 'Arial', sans-serif;
-  font-size: 30px;
-  line-height: 1.6;
-}
-
-#close-film-description {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  color: #fffcfc;
-  font-size: 60px;
 }
 
 /* Styles for the popup gallery */
@@ -321,8 +334,6 @@ h1 {
     text-align: center;
   }
 
-  /* Adjust other styles as needed for smaller screens */
-
   .team-section {
     height: auto;
     padding: 10px;
@@ -360,8 +371,6 @@ h1 {
     margin-left: 10%;
   }
 
-  /* Adjust other styles as needed for smaller screens */
-
   .team-section {
     height: auto;
     padding: 10px;
@@ -393,8 +402,6 @@ h1 {
     margin-left: 10%;
   }
 
-  /* Adjust other styles as needed for smaller screens */
-
   .team-section {
     height: auto;
     padding: 10px;
@@ -417,8 +424,6 @@ h1 {
     text-align: center;
   }
 
-  /* Adjust other styles as needed for smaller screens */
-
   .team-section {
     height: auto;
     padding: 10px;
@@ -428,3 +433,4 @@ h1 {
     width: 100%;
   }
 }
+

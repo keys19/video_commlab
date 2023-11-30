@@ -12,14 +12,16 @@
 </head>
 
 <body>
+    <!-- preloading the video -->
   <iframe id="preloaded-video" style="display: none;" width="1" height="1" src="https://www.youtube.com/embed/NXRxjvA7wCI?si=uAK3VeyIO0bSKKwA" frameborder="0" allowfullscreen preload></iframe>
 
+  <!-- film section -->
     <div class="film" id="section1">
         <h1>The Film</h1>
-        <!-- Film section in the center -->
-
         <div id="iframe-container">
+            <img id="image-overlay-top-left" src="images/cookie2.png" alt="Top Left Overlay Image">  
             <div id="player"></div>
+            <!-- cookie image overlay on player -->
             <img id="image-overlay" src="images/cookie.png" alt="Overlay Image">
             <div id="menu-container" style="display: none;">
                 <div class="menu-option" onclick="redirectToPage('scene12b.html')">Eat it!</div>
@@ -37,7 +39,7 @@
             player = new YT.Player('player', {
                 height: '390',
                 width: '640',
-                videoId: 'NXRxjvA7wCI', // Replace with the actual YouTube video ID
+                videoId: 'NXRxjvA7wCI', 
                 events: {
                     'onReady': onPlayerReady,
                     'onStateChange': onPlayerStateChange
@@ -46,7 +48,7 @@
         }
 
         function onPlayerReady(event) {
-            // You can perform actions when the player is ready, if needed
+            //perform actions when the player is ready, if needed
         }
 
         function onPlayerStateChange(event) {

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comm Lab Video Assignment</title>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <!-- Include the YouTube API script -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+
+    <iframe id="preloaded-video" style="display: none;" width="1" height="1" src="https://www.youtube.com/embed/xzmrmwPS7FI?si=J4njh4URNYy2VugY" frameborder="0" allowfullscreen preload></iframe>
+  
+    <!-- navbar -->
+    <div class="navbar">
+      <ul>
+        <li><a href="index.html#sectionHeader"><i class="fa fa-fw fa-about"></i> Home</a></li>
+        <li><a href="index.html#section1"><i class="fa fa-fw fa-film"></i>Film</a></li>
+        <li><a class="active" href="cast.html"><i class="fa fa-fw fa-cast"></i> Cast</a></li>
+      </ul>
+    </div>
+
+    <!-- Section for cast -->
+  <div class="team-section" id="section4">
+    <h1>The Cast</h1>
+    <div class="team-container">
+      <div class="team-member">
+        <img src="./images/2.png" alt="Team Member 1">
+        <h3>Aysha</h3>
+        <p>Director, Sound Manager</p>
+      </div>
+      <div class="team-member">
+        <img src="./images/4.png" alt="Team Member 2">
+        <h3>Ahmad</h3>
+        <p>Film editor</p>
+      </div>
+      <div class="team-member">
+        <img src="./images/1.png" alt="Team Member 3">
+        <h3>Lemisa</h3>
+        <p>Lead Actor, scriptwriter</p>
+      </div>
+      <div class="team-member">
+        <img src="./images/3.png" alt="Team Member 4">
+        <h3>Keya</h3>
+        <p>Actor, Web Developer</p>
+      </div>
+    </div>
+    <button onclick="openBtsPopup()">Behind The Scenes</button>
+  </div>
+
+  <!-- Popup gallery for BTS -->
+  <div id="overlay">
+    <div id="bts-popup">
+      <span id="close-btn" onclick="closeBtsPopup()">&times;</span>
+      <img src="images/bts1.png" alt="Behind the Scenes 1">
+      <!-- <img src="/images/2.png" alt="Behind the Scenes 2"> -->
+    </div>
+  </div>
+
+  </body>
+</html>

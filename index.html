@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=0.75">
   <title>Comm Lab Video Assignment</title>
   <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
@@ -13,28 +13,32 @@
 
   <!-- Include the YouTube API script -->
   <script src="https://www.youtube.com/iframe_api"></script>
+  <!-- link to javascript -->
   <script src="script.js"></script>
 </head>
 
 <body>
 
+    <!-- Preloading the video -->
   <iframe id="preloaded-video" style="display: none;" width="1" height="1" src="https://www.youtube.com/embed/xzmrmwPS7FI?si=J4njh4URNYy2VugY" frameborder="0" allowfullscreen preload></iframe>
 
+  <!-- navbar -->
   <div class="navbar">
     <ul>
-      <li><a class="active" href="#sectionHeader"><i class="fa fa-fw fa-about"></i> Home</a></li>
-      <li><a href="#section1"><i class="fa fa-fw fa-film"></i>Film</a></li>
-      <li><a href="#section4"><i class="fa fa-fw fa-cast"></i> Cast</a></li>
+      <li><a class="active" href="index.html#sectionHeader"><i class="fa fa-fw fa-about"></i> Home</a></li>
+      <li><a href="index.html#section1"><i class="fa fa-fw fa-film"></i>Film</a></li>
+      <li><a href="cast.html"><i class="fa fa-fw fa-cast"></i> Cast</a></li>
     </ul>
   </div>
 
+  <!-- header image and title -->
   <div class="header" id="sectionHeader">
-    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top"></button> -->
     <div class="text-container">
       <h1 id="Where is my cookie?" style="align-self: flex-end;">Where <br>is my <br>Cookie?</h1>
       <img src="images/info.png" alt="About the Film" id="film-description-btn" onclick="openFilmDescription()">
     </div>
   </div>
+
 
   <!-- Popup for film description -->
   <div id="film-description-popup">
@@ -43,11 +47,12 @@
     <p>This film takes you on a delightful journey to discover the mystery behind the missing cookie. Join us for a comedy that explores the sweet and funny side of moral dilemmas, all wrapped up in a delicious adventure!</p>
   </div>
 
+
+<!-- Film section in the center -->
   <div class="film" id="section1">
     <h1>The Film</h1>
-
-    <!-- Film section in the center -->
     <div id="iframe-container">
+      <img id="image-overlay-top-left" src="images/cookie2.png" alt="Top Left Overlay Image">  
       <div id="player"></div>
       <img id="image-overlay" src="images/cookie.png" alt="Overlay Image">
       <div id="menu-container" style="display: none;">
@@ -58,7 +63,7 @@
   </div>
 
   <!-- Section for cast -->
-  <div class="team-section" id="section4">
+  <!-- <div class="team-section" id="section4">
     <h1>The Cast</h1>
     <div class="team-container">
       <div class="team-member">
@@ -83,29 +88,28 @@
       </div>
     </div>
     <button onclick="openBtsPopup()">Behind The Scenes</button>
-  </div>
+  </div> -->
 
   <!-- Popup gallery for BTS -->
-  <div id="overlay">
+  <!-- <div id="overlay">
     <div id="bts-popup">
-      <span id="close-btn" onclick="closeBtsPopup()">&times;</span>
+      <span id="close-btn" onclick="closeBtsPopup()">&times;</span> -->
       <!-- Add your BTS images here -->
-      <img src="images/bts1.png" alt="Behind the Scenes 1">
+      <!-- <img src="images/bts1.png" alt="Behind the Scenes 1"> -->
       <!-- <img src="/images/2.png" alt="Behind the Scenes 2"> -->
       <!-- Add more images as needed -->
-    </div>
-  </div>
+    <!-- </div>
+  </div>  -->
 
   <script>
     let player;
     const menuContainer = document.getElementById('menu-container');
-
     // This function is called when the YouTube API is ready
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('player', {
         height: '390',
         width: '340',
-        videoId: 'xzmrmwPS7FI', // Replace with the actual YouTube video ID
+        videoId: 'xzmrmwPS7FI', 
         events: {
           'onReady': onPlayerReady,
           'onStateChange': onPlayerStateChange
@@ -115,7 +119,7 @@
 
     function onPlayerReady(event) {
       console.log('Player is ready');
-      // You can perform actions when the player is ready, if needed
+      //perform actions when the player is ready, if needed
     }
 
     function onPlayerStateChange(event) {
@@ -132,11 +136,9 @@
 
     function redirectToPage(page) {
       window.location.href = page;
-    }
+    }  
   </script>
-
 </body>
-
 </html>
 
 
